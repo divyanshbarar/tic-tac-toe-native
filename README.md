@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
+# Tic Tac Toe Game - React Native with Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![ss](screenshot1.png)  ![ss](screenshot2.png)
+## 📱 Overview
 
-## Get started
+A fully-featured Tic Tac Toe game built with React Native and Expo, featuring:
+- Classic 3×3 and challenging 4×4 game modes
+- Smooth animations and visual feedback
+- Score tracking and game history
+- Shareable game results
+- Responsive design for all screen sizes
 
-1. Install dependencies
+## ✨ Features
 
+- **Two Game Modes**: Switch between 3×3 (classic) and 4×4 (requires 4 in a row)
+- **Visual Animations**: Cell presses, win celebrations, and smooth transitions
+- **Score Tracking**: Keeps count of X wins, O wins, and draws
+- **Game History**: View your last 5 games with results and timestamps
+- **Share Results**: Easily share your scores with friends
+- **Responsive Design**: Works on phones and tablets of all sizes
+
+## 🛠️ Technical Details
+
+- **Built with**: React Native + TypeScript
+- **Animation**: React Native Animated API
+- **Icons**: Expo Vector Icons
+- **Sharing**: React Native Share API
+- **State Management**: React Hooks
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- Expo CLI (`npm install -g expo-cli`)
+- Yarn or npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/tic-tac-toe.git
+   cd tic-tac-toe
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
-
+3. Start the development server:
    ```bash
-   npx expo start
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your device/emulator:
+   - Scan the QR code with the Expo Go app (Android/iOS)
+   - Or press `i` for iOS simulator / `a` for Android emulator
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📂 Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+tic-tac-toe/
+├── App.tsx            # Main application entry point
+├── components/        # Game components
+│   └── TicTacToe.tsx  # Main game component
+├── assets/            # Static assets
+├── types/             # TypeScript type definitions
+└── styles/            # Style sheets
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎨 Customization
 
-## Learn more
+You can easily customize:
+- Colors in the `styles` object
+- Animation durations and effects
+- Board size and win conditions
+- Number of historical games saved
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🤝 Contributing
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Contributions are welcome! Please open an issue or submit a pull request.
 
-## Join the community
+## 📄 License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
